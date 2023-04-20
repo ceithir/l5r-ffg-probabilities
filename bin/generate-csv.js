@@ -4,7 +4,13 @@ import { chances } from "../maths.js";
 import { writeFile, appendFile } from "fs";
 
 const roundedChances = (params) => {
-  return (chances(params) * 100).toFixed(2);
+  let result = chances(params);
+  // Rounding errors when near zero
+  if (result < 0) {
+    result = 0;
+  }
+
+  return (result * 100).toFixed(2);
 };
 
 const filename = "probabilities.csv";
