@@ -23,7 +23,7 @@ const columns = [
   "Result (%)",
 ];
 
-await writeFileSync(filename, columns.join(",") + "\n");
+writeFileSync(filename, columns.join(",") + "\n");
 
 for (let ring = 1; ring <= 5; ring++) {
   for (let skill = 0; skill <= 5; skill++) {
