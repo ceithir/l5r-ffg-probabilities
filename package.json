@@ -12,7 +12,7 @@
     "generate": "./bin/generate-csv.js"
   },
   "name": "l5r-ffg-probabilities",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Probabilities for L5R FFG custom dice",
   "main": "maths.js",
   "repository": "https://github.com/ceithir/l5r-ffg-probabilities",
