@@ -1,5 +1,6 @@
 {
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
@@ -7,6 +8,7 @@
     "jest": "^29.5.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "generate": "./bin/generate-csv.js"
   }
 }
